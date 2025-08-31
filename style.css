@@ -152,15 +152,24 @@ footer {
   color: #777;
 }
 
-/* Khusus layar kecil (HP) */
+/* khusus layar HP (<=768px) */
 @media (max-width: 768px) {
-  .produk {
+  .produk-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 kolom */
-    gap: 12px;
+    gap: 16px;
   }
 
-  .produk .card {
-    margin: 0; /* biar rapih */
+  .produk-wrapper .card {
+    width: 100%; /* supaya rapih */
+    margin: 0;
+  }
+
+  .produk-wrapper .card img {
+    width: 100%; /* biar gambar ngepas kolom */
+    height: auto;
+    border-radius: 8px;
   }
 }
+
+
