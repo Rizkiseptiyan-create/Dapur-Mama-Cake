@@ -152,42 +152,6 @@ footer {
   color: #777;
 }
 
-/* khusus layar HP (<=768px) */
-@media (max-width: 768px) {
-  .produk-list {
-    grid-template-columns: repeat(2, 1fr); /* jadi 2 kolom */
-  }
-
-  .produk-card img {
-    width: 100%;
-    height: 150px;      /* seragam */
-    object-fit: cover;  /* crop rapi */
-    border-radius: 8px;
-    display: block;
-  }
-}
-
-/* grid 2 kolom untuk HP */
-@media (max-width: 768px) {
-  .produk-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom rata */
-    gap: 12px;
-  }
-
-  .produk-grid .card {
-    margin: 0;
-    width: 100%;   /* biar ikut kolom */
-  }
-
-  .produk-grid .card img {
-    width: 100%;
-    height: 150px;         /* tinggi seragam */
-    object-fit: cover;     /* gambar dipotong rapi */
-    border-radius: 8px;
-    display: block;
-  }
-}
 
 
 
