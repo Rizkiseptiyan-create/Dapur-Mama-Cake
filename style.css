@@ -171,5 +171,40 @@ footer {
     border-radius: 8px;
   }
 }
+/* Container produk */
+.produk-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .produk-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* HP kecil */
+@media (max-width: 480px) {
+  .produk-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.produk-grid .card {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.produk-grid .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 
 
