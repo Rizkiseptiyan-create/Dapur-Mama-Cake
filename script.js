@@ -1,10 +1,16 @@
+// toggle detail produk
 function toggleDetail(card) {
-  const detail = card.querySelector('.produk-detail');
-  if (detail) {
-    detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
-  }
+  const detail = card.querySelector(".produk-detail");
+  detail.classList.toggle("show");
 }
 
-function toggleDetail(card) {
-  card.classList.toggle('active');
-}
+// smooth scroll untuk anchor link
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({
+        behavior: "smooth"
+      });
+  });
+});

@@ -15,8 +15,8 @@ body {
 
 /* Header */
 header {
-  background: #f28b82; /* warna manis pink coral */
-  color: white;
+  background: #f8d7da; /* warna pink lembut */
+  color: #333(3, 2, 2);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -54,9 +54,9 @@ nav ul li a:hover {
 #hero {
   background: url('hero.jpg') no-repeat center center/cover;
   text-align: center;
-  color: white;
+  color: #333;
   padding: 80px 20px;
-  background-color: #f28b82; /* fallback kalau ga ada gambar */
+  background-color: #f8d7da; /* fallback kalau ga ada gambar */
 }
 
 #hero h2 {
@@ -147,7 +147,7 @@ footer {
   background: #f5f5f5;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
+  margin-top: -10px;
   font-size: 14px;
   color: #777;
 }
@@ -209,10 +209,89 @@ footer {
   }
 }
 
+.wa-btn {
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
 
+.wa-btn:hover {
+  background-color: #1ebe5b;
+}
 
+.wa-btn i {
+  font-size: 20px;
+}
 
+#info {
+  background: #f8d7da;
+  padding: 30px 40px;
+}
 
+.info-container {
+  display: flex;
+  justify-content: flex-start; /* biar mulai dari kiri */
+  gap: 60px; /* jarak antar kolom */
+  flex-wrap: wrap; /* responsif, kalau layar kecil turun ke bawah */
+}
 
+.info-box {
+  flex: 1 1 200px; /* fleksibel tapi min. 200px */
+}
 
+.info-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 
+.info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-box ul li {
+  margin-bottom: 6px;
+}
+
+.info-box a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+}
+
+.info-box i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.wa-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.wa-float i {
+  margin-top: 14px;
+}
+
+.wa-float:hover {
+  background-color: #1ebe5b;
+}
+/* Akhir CSS */
